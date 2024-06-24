@@ -1,0 +1,123 @@
+
+/* Archivo: css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 20px;
+    background-color: #1f1f1f;
+    border-bottom: 1px solid #333;
+}
+
+header .logo img {
+    max-width: 100px;
+    border-radius: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #BB86FC;
+}
+
+nav ul li a:hover {
+    color: #3700B3;
+}
+
+header button {
+    padding: 10px 20px;
+    background-color: #BB86FC;
+    color: #121212;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+header button:hover {
+    background-color: #3700B3;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+main .info_principal {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    color: #E0E0E0;
+}
+
+main .info_imagen {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+main .info_imagen img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+main .info_imagen .articulo {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    color: #E0E0E0;
+}
+
+main .futbol {
+    display: flex;
+    justify-content: center;
+}
+
+footer {
+    background-color: #1f1f1f;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #333;
+    color: #E0E0E0;
+}
+
+footer .info_principal {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 10px;
+    color: #E0E0E0;
+}
+.videos {
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor_video{
+    display: flex;
+    justify-content: space-between;
+}
+.contenedor_video button {
+    background-color: #BB86FC;
+    border-radius: 20px;
+    border: none;
+}
