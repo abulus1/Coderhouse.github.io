@@ -1,0 +1,15 @@
+$fondo : #1f1f1f;
+$title_principal: Arial, sans-serif;
+
+// Mapas
+$my-font-sizes:(
+    xs: 10em,
+    sm: 14em,
+    md: 18em,
+    xl: 22em,
+);
+@each $formato, $talle in $my-font-sizes{
+    .kfz-#{$formato}{
+        font-size: $talle;
+    }
+}

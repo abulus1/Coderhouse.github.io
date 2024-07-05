@@ -1,0 +1,40 @@
+header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    padding: 20px;
+    background-color: $fondo;
+    border-bottom: 1px solid #333;
+  
+    .logo img {
+      max-width: 100px;
+      border-radius: 50px;
+    }
+  
+    nav {
+      ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+  
+        li {
+          margin: 0 10px;
+  
+          a {
+            text-decoration: none;
+            color: #BB86FC;
+  
+            &:hover {
+              color: #3700B3;
+            }
+          }
+        }
+      }
+    }
+  
+    button {
+      @include button-style(#BB86FC, #1f1f1f, #3700B3);
+    }
+  }
+  

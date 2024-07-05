@@ -1,0 +1,61 @@
+@media (max-width: 768px) {
+    header {
+      grid-template-columns: 1fr;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+  
+      li {
+        margin: 10px 0;
+      }
+    }
+  
+    .videos, .futbol {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .contenedor_video {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      padding: 10px;
+  
+      .logo img {
+        max-width: 80px;
+      }
+  
+      button {
+        @include button-style(#BB86FC, #1f1f1f, #3700B3, 5px);
+        padding: 8px 16px;
+      }
+    }
+  
+    main {
+      padding: 10px;
+  
+      .info_principal,
+      .info_imagen .articulo,
+      footer .info_principal {
+        @include info-container-style(#1f1f1f, #E0E0E0, 10px, 10px);
+      }
+    }
+  
+    .videos iframe, .futbol iframe {
+      height: 200px;
+    }
+  
+    .contenedor_video {
+      button {
+        @include button-style(#BB86FC, #1f1f1f, #3700B3, 20px);
+        padding: 10px;
+      }
+    }
+  }
+  

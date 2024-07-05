@@ -1,0 +1,33 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+  
+    .info_principal {
+      @include info-container-style(#1f1f1f, #E0E0E0);
+    }
+  
+    .info_imagen {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      gap: 20px;
+  
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+  
+      .articulo {
+        @include info-container-style(#1f1f1f, #E0E0E0);
+      }
+    }
+  
+    .futbol {
+      display: flex;
+      justify-content: center;
+    }
+  }
+  
